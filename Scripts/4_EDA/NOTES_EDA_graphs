@@ -1,0 +1,67 @@
+#### Principles of Analytic Graphics:
+#######################################
+
+Principle 1: Show comparison 
+- Evidence for a hypothesis is always relative
+
+Principle 2: Show causality, mechanism, explaination
+
+Principle 3: Show multivariate data
+- Able to give a richer story
+
+Pricinple 4: Integration of evidence
+- Integrate words, numbers images and diagrams
+
+Principle 5: Describe and document the evidence with appropriate labels, scales etc
+- Data graphic should tell a complete story
+
+Principle 6: Content is king
+- Presentation stand or fall depending on the quality, relavanece
+
+src: edwardstufte.com
+
+#### Why do we use graphs in data analysis:
+###########################################
+
+1- understand data properties
+2- find patterns
+3- suggest modeling strategies
+4- debug analyses
+5- communicate results
+
+EDA aims to achieve the first 4 principles. Some of their characteristics:
+- Made quickly
+- large numbers are made
+- Goal is for personal understanindg
+
+Examples:
+- 5 point summary
+- Histograms (play around with breaks and add a rug() and abline() to it)
+- Boxplot (add abline() to make it more informative)
+- Barplot (for categorical variables)
+
+These plots are often quick and dirty and elt us summarise the data graphically.
+They also help us to explore basic questions and form hypotheses, and suggesting modeling strategies.
+
+Examples:
+- R Graph Gallery
+- R Blogger
+
+#### Plotting Systems in R
+###########################################
+
+1- Artist's Plot (package: base)
+Plot function in the base package which allows plotting and adding other plots features.
+Disadvantage of this method is the inability to quickly change the annotations etc. 
+
+2- Lattice System (package:Lattice)
+Plots are created using single function (e.g. xyplot, bwplot). as it requires a lot of condition, a lot of data needs to be parsed into the functions before able to plot it.
+
+Good for putting many plots on screen (panel plots) - but required conditioning. However, annotations are all calcualted by default.
+
+The disadvantage is the difficulty in specifying an entire plot as well as annotating. Although can use some functions to add to the canvas but it caant.
+
+3- ggplot2 (package:ggplot2)
+Grammar of graphics plot. Mixes ideas from both base package and lattice system. Alot of the aesthetic and annotations are also automatically put in. 
+
+
